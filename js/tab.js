@@ -3,12 +3,12 @@ document.getElementById("blockchain").addEventListener("click", blockchain);
 document.getElementById("backend").addEventListener("click", backend);
 
 function all() {
-     document.getElementById("all").className = "active";
-     document.getElementById("blockchain").className = "";
-     document.getElementById("backend").className = "";
+    document.getElementById("all").className = "active";
+    document.getElementById("blockchain").className = "";
+    document.getElementById("backend").className = "";
 
-     let work = document.getElementsByClassName("work");
-     for(let i = 0; i < work.length; ++i) work[i].style.display = "";
+    let work = document.getElementsByClassName("work");
+    for(let i = 0; i < work.length; ++i) work[i].style.display = "";
 }
 
 function blockchain() {
