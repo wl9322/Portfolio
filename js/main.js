@@ -286,8 +286,20 @@
 		})
 	};
 
+	var checkOverlay = function() {
+		let curURL = $(window.location)[0].href;
+		let specialIndex = curURL.indexOf("#");
+		
+		if (specialIndex != -1) {
+			let url = curURL.replace("#", "");
+			myload(url);
+		}	
+	}
+
 	// Document on load.
 	$(function(){
+		checkOverlay();
+
 		fullHeight();
 		counter();
 		counterWayPoint();
