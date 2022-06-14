@@ -7,7 +7,7 @@ function myload(url) {
 
 function closeOverlay() {
 	let curURL = $(window.location)[0].href;
-	let lastIndex = curURL.lastIndexOf("/");
+	let lastIndex = curURL.lastIndexOf("#") - 1;
 	let url = curURL.substring(0, lastIndex);
 
 	window.history.pushState(null, null, url);
