@@ -1,13 +1,12 @@
 function myload(url) {
 	$(".project-overlay").load(url);
-	console.log("hi");	
 	$(".project-overlay").css("display", "block");
 }
 
 
 function closeOverlay() {
 	let curURL = $(window.location)[0].href;
-	let lastIndex = curURL.lastIndexOf("#") - 1;
+	let lastIndex = curURL.lastIndexOf("#");
 	let url = curURL.substring(0, lastIndex);
 
 	window.history.pushState(null, null, url);
@@ -15,9 +14,7 @@ function closeOverlay() {
 }
 
 $("a[name='overlay-workTest']").click(function(event) {
-	console.log(event);
 	event.preventDefault();
-	console.log("hello");
 	let url = "project/project-overlay.html";
 	let curURL = $(window.location)[0].href;
 	let lastIndex = curURL.lastIndexOf("/");
