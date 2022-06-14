@@ -1,5 +1,6 @@
-function myload(url) {	
+function myload(url) {
 	$(".project-overlay").load(url);
+	console.log("hi");	
 	$(".project-overlay").css("display", "block");
 }
 
