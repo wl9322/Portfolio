@@ -53,7 +53,7 @@ function closeOverlay() {
 	$(".project-overlay").addClass("hidden");
 	$("#colorlib-page").removeClass("hidden");
 
-	$('html').animate({scrollTop : scrollValue}, 1000);
+	$('html').animate({scrollValue : scrollValue}, 1000);
 }
 
 $("a[name='overlay-project']").click(function(event) {
