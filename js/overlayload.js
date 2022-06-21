@@ -52,8 +52,10 @@ function closeOverlay() {
 	window.history.pushState(null, null, url);
 	$(".project-overlay").addClass("hidden");
 	$("#colorlib-page").removeClass("hidden");
-	$('html').animate({scrollTop : scrollValue}, 10);
 
+	$('html').animate({scrollTop : scrollValue}, 10);
+	$el.find('li').removeClass('active');
+	$el.find('a[data-nav-section="porject"]').addClass('active');
 }
 
 $("a[name='overlay-project']").click(function(event) {
