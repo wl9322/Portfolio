@@ -58,7 +58,6 @@ function closeOverlay() {
 
 $("a[name='overlay-project']").click(function(event) {
 	event.preventDefault();
-	console.log($(this).attr("path"));
 	let url = $(this).attr("path");
 	let curURL = $(window.location)[0].href;
 	let lastIndex = curURL.lastIndexOf("/");

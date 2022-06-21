@@ -116,9 +116,9 @@
     color: #999999;
     position: absolute;
     font-size: 20px;
-    margin: 50px;
+    margin: 10px;
     top : 10px;
-    right : 10px;
+    right : 80px;
   }
   .x-btn:hover{
     color: #2c98f0;
