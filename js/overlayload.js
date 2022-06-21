@@ -55,10 +55,8 @@ function closeOverlay() {
 
 	$('html').animate({scrollTop : scrollValue}, 10);
 	setTimeout(function(){
-		var $el = $('#navbar > ul');
-		$el.find('li').removeClass('active');
-		$el.find('a[data-nav-section="project"]').addClass('active');
-	}, 20);
+		navigationSection();
+	}, 100);
 	
 }
 
