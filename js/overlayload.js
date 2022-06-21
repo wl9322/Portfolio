@@ -53,9 +53,7 @@ function closeOverlay() {
 	$(".project-overlay").addClass("hidden");
 	$("#colorlib-page").removeClass("hidden");
 
-	$('html, body').animate({
-		scrollTop:scrollValue
-	}, 10);
+	moveMenu();
 }
 
 $("a[name='overlay-project']").click(function(event) {
