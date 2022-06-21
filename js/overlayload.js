@@ -85,7 +85,7 @@ function closeOverlay() {
 	$("#colorlib-page").removeClass("hidden");
 	
 	let section = 'project';
-	nabigationSection();
+	navigationSection();
 	$('html, body').animate({
 		scrollTop: $('[data-section="' + section + '"]').offset().top - 55
 	}, 10);
