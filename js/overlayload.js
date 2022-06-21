@@ -82,6 +82,7 @@ function closeOverlay() {
 
 	window.history.pushState(null, null, url);
 	$(".project-overlay").addClass("hidden");
+	$(".project-overlay").empty();
 	$("#colorlib-page").removeClass("hidden");
 	
 	let section = 'project';
