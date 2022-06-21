@@ -69,8 +69,8 @@ function closeOverlay() {
 	window.history.pushState(null, null, url);
 	$(".project-overlay").addClass("hidden");
 	$("#colorlib-page").removeClass("hidden");
-
-	moveMenu();
+	
+	setTimeout(moveMenu(), 1000);
 }
 
 $("a[name='overlay-project']").click(function(event) {
