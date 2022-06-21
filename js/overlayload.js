@@ -1,23 +1,3 @@
-var scrollValue;
-
-var moveMenu = function() {
-	console.log("menu");
-	var section = 'project',
-		navbar = $('#navbar');
-
-	if ( $('[data-section="' + section + '"]').length ) {
-		   $('html, body').animate({
-			   scrollTop: $('[data-section="' + section + '"]').offset().top - 55
-		   }, 10);
-	}
-
-	if ( navbar.is(':visible')) {
-		navbar.removeClass('in');
-		navbar.attr('aria-expanded', 'false');
-		$('.js-colorlib-nav-toggle').removeClass('active');
-	}
-};
-
 var contentWayPoint = function() {
 	var i = 0;
 	$('.animate-box').waypoint( function( direction ) {
@@ -55,7 +35,6 @@ var contentWayPoint = function() {
 };
 
 function myload(url) {	
-	scrollValue = $(document).scrollTop(); 
 	$(".project-overlay").load(url, contentWayPoint);
 	$(".project-overlay").removeClass("hidden");
 	$("#colorlib-page").addClass("hidden");
@@ -71,7 +50,11 @@ function closeOverlay() {
 	$(".project-overlay").addClass("hidden");
 	$("#colorlib-page").removeClass("hidden");
 	
-	setTimeout(moveMenu(), 1000);
+	let section = 'project';
+	nabigationSection();
+	$('html, body').animate({
+		scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+	}, 10);
 }
 
 $("a[name='overlay-project']").click(function(event) {
