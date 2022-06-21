@@ -1,6 +1,7 @@
 var scrollValue;
 
 var moveMenu = function() {
+	console.log("menu");
 	var section = 'project',
 		navbar = $('#navbar');
 
