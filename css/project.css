@@ -110,12 +110,14 @@
     color: #2c98f0;
   }
 
-  .xbtn{
+  .x-btn{
     position: absolute;
+    width : 10px;
+    height: 10px;
     top : 5px;
     right : 5px;
   }
-  .xbtn:hover{
+  .x-btn:hover{
     color: #2c98f0;
   }
 
